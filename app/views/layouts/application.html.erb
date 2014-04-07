@@ -8,6 +8,9 @@
 </head>
 <body>
 
+<%= content_tag :p, notice, class: 'notice' unless notice.blank? %>
+<%= content_tag :p, alert,  class: 'alert'  unless alert.blank?  %>
+
 <%= yield %>
 
 </body>
