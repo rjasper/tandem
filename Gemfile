@@ -47,3 +47,5 @@ end
 # user management
 gem 'devise'
 
+# bootstrap style with sass
+gem 'bootstrap-sass'
