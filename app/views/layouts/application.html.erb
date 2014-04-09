@@ -3,6 +3,7 @@
 <head>
   <title>Tandem</title>
   <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <%= csrf_meta_tags %>
   <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
   <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
@@ -11,13 +12,15 @@
 <%= render 'layouts/header' -%>
 <%= render 'layouts/navigation' -%>
 
-<%= content_tag :p, notice, class: 'alert alert-info'   unless notice.blank? %>
-<%= content_tag :p, alert,  class: 'alert alert-danger' unless alert.blank?  %>
-
-<%= render 'layouts/sidebar' -%>
-
-<%= yield -%>
-
-<%= render 'layouts/footer' -%>
+<div class="container">
+  <%= content_tag :p, notice, class: 'alert alert-info'   unless notice.blank? %>
+  <%= content_tag :p, alert,  class: 'alert alert-danger' unless alert.blank?  %>
+  
+  <%= render 'layouts/sidebar' -%>
+  
+  <%= yield -%>
+  
+  <%= render 'layouts/footer' -%>
+</div>
 </body>
 </html>

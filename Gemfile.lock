@@ -1,3 +1,10 @@
+GIT
+  remote: https://github.com/justinfrench/formtastic.git
+  revision: f630fb0bee233c75301cc0a362cfbe58ae7b5001
+  specs:
+    formtastic (2.3.0.rc2)
+      actionpack (>= 3.0)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -45,6 +52,8 @@ GEM
       warden (~> 1.2.3)
     erubis (2.7.0)
     execjs (2.0.2)
+    formtastic-bootstrap (3.0.0)
+      formtastic (>= 2.2)
     hike (1.2.3)
     i18n (0.6.9)
     jbuilder (1.5.3)
@@ -127,6 +136,8 @@ DEPENDENCIES
   bootstrap-sass
   coffee-rails (~> 4.0.0)
   devise
+  formtastic!
+  formtastic-bootstrap
   jbuilder (~> 1.2)
   jquery-rails
   rails (= 4.0.4)

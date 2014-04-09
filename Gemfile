@@ -49,3 +49,7 @@ gem 'devise'
 
 # bootstrap style with sass
 gem 'bootstrap-sass'
+
+# formtastic form helper
+gem 'formtastic', git: "https://github.com/justinfrench/formtastic.git"
+gem 'formtastic-bootstrap'
