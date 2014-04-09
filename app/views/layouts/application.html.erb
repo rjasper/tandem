@@ -11,7 +11,7 @@
 <%= render 'layouts/header' -%>
 <%= render 'layouts/navigation' -%>
 
-<%= content_tag :p, notice, class: 'alert alert-info'    unless notice.blank? %>
+<%= content_tag :p, notice, class: 'alert alert-info'   unless notice.blank? %>
 <%= content_tag :p, alert,  class: 'alert alert-danger' unless alert.blank?  %>
 
 <%= render 'layouts/sidebar' -%>
